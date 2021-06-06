@@ -1,0 +1,47 @@
+@import url(*http);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka.One",cursive;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+}
+.center{
+    width: 15rem;
+    height: 15rem;
+    /* background-color: #fff; */
+   position: relative;
+   
+   
+}
+
+.rot{
+    width: 15rem;
+    height: 15rem;
+    border-left:0.3rem solid #005;
+    border-top:0.3rem solid red;
+    border-bottom:0.4rem solid yellow;
+    border-radius:50%;
+    animation: rot 2s linear infinite ;
+}
+@keyframes rot{
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+h2{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+
+}
